@@ -1,3 +1,11 @@
+export const metadata = {
+	title: "about page",
+};
+
 export default function AboutPage() {
-	return <h1>AboutPage</h1>;
+	return (
+		<section>
+			<h1>AboutPage</h1>
+		</section>
+	);
 }
