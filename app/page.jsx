@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
 const PageHome = () => {
 	return (
 		<section>
-			<h1>PageHome</h1>
+			<h1 className="text-3xl font-bold underline text-cyan-500">PageHome</h1>
 			<button
 				onClick={() => {
-					console.log("hola");
+					console.log('hola');
 				}}
 			>
 				button
