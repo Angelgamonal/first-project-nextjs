@@ -9,13 +9,20 @@ const Page = async ({ params }) => {
 
 	return (
 		<>
-			<h1 className="text-4xl text-center font-bold underline">
+			<h1 className='text-center text-4xl font-bold underline'>
 				Character ID: {params.id}{' '}
 			</h1>
 
-			<section className="flex gap-3 items-center justify-center mt-3 ">
-				<Image src={character.image} alt={character.name} width={250} height={150} />
-				<article className="flex flex-col gap-3">
+			<section className='mt-3 flex items-center justify-center gap-3 '>
+				<Image
+					src={character.image}
+					alt={character.name}
+					width={250}
+					height={150}
+					priority
+					className='h-auto w-60'
+				/>
+				<article className='flex flex-col gap-3'>
 					<span>
 						Name: <strong>{character.name}</strong>
 					</span>
@@ -29,8 +36,8 @@ const Page = async ({ params }) => {
 						Gender: <strong>{character.gender}</strong>
 					</span>
 					<Link
-						href="/posts"
-						className="border border-white text-center rounded-lg p-1 hover:bg-white hover:text-black"
+						href='/posts'
+						className='rounded-lg border border-white p-1 text-center hover:bg-white hover:text-black'
 					>
 						Regresar
 					</Link>
